@@ -1,0 +1,26 @@
+<mat-card class="card">
+    <mat-card-header>
+        <mat-card-title>#{{book?.id}} - {{book?.name}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="card--body">
+        <div class="card--body--item">
+            <span *ngFor="let flag of book?.genre">
+                {{flag}}
+            </span>
+        </div>
+        <div class="card--body--item">
+            <span class="card--body--title">Author</span>
+            <div class="card--body--description">{{book?.author}}</div>
+        </div>
+
+        <div class="card--body--item">
+            <span class="card--body--title">Language</span>
+            <div class="card--body--description">{{book?.language}}</div>
+        </div>
+
+        <div class="card--body--item">
+            <span class="card--body--title">Quantity</span>
+            <div class="card--body--description">{{book?.quantity}}</div>
+        </div>
+    </mat-card-content>
+</mat-card>

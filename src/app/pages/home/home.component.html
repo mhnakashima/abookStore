@@ -1,0 +1,8 @@
+<mat-grid-list 
+    class="book--container"
+    #grid rowHeight="2:1"
+>
+    <mat-grid-tile class="book--area" *ngFor="let book of books">
+        <app-card [book]="book"></app-card>
+    </mat-grid-tile>
+</mat-grid-list>
