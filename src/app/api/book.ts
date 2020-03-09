@@ -5,7 +5,7 @@ export class Book{
     id: string;
     name: string;
     author: string;
-    genre: [];
+    genre: any[];
     language: string;
     quantity: string;
 }

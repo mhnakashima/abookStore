@@ -1,0 +1,16 @@
+.holder{
+    
+    &-information{
+        margin-left: 70px;
+    }
+}
+
+.user{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    
+    border-radius: 100%;
+    max-height: 48px;
+    max-width: 48px;
+}

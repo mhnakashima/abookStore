@@ -1,0 +1,11 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-md-3" *ngFor="let item of products$" >
+            <app-card [book]="item" [path]="'./edit/'" [value]="item.id" [deleteAction]="true"></app-card>
+        </div> 
+    </div>
+
+    <button class="button--add" mat-fab aria-label="Add book" (click)="redirectToPage('products/add')">
+        <mat-icon>book</mat-icon>
+    </button>
+</div>

@@ -1,0 +1,10 @@
+<h1 mat-dialog-title> 
+    Deseja deletar o livro?
+</h1>
+<div mat-dialog-content>
+    <p>{{data?.book.name}}</p>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancel</button>
+    <button mat-raised-button [mat-dialog-close]="data?.book.id" color="warn">Delete</button>
+</div>

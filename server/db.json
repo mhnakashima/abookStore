@@ -4,11 +4,14 @@
       "id": "2",
       "name": "The Little Prince",
       "author": "Antoine de Saint-Exupéry",
-      "genre": [
-        "fantasy"
-      ],
       "language": "English",
-      "quantity": 5
+      "quantity": 5,
+      "genre": [
+        "fantasy",
+        "Romance",
+        "Suspense",
+        "Action"
+      ]
     },
     {
       "id": "3",
@@ -25,15 +28,16 @@
       "id": "4",
       "name": "The Master and Margarita",
       "author": "Mikhail Bulgakov",
+      "language": "Spanish",
+      "quantity": 7,
       "genre": [
         "fantasy",
         "farce",
         "supernatural",
         "romance",
-        "satirical novel"
-      ],
-      "language": "English",
-      "quantity": 7
+        "satirical novel",
+        "Suspense"
+      ]
     },
     {
       "id": "5",
@@ -74,9 +78,17 @@
       ],
       "language": "Chinese",
       "quantity": 30
+    },
+    {
+      "id": "000000001",
+      "name": "tales of how to live ",
+      "author": "Michael ",
+      "genres": [
+        "Fantasy"
+      ],
+      "language": "Chinese",
+      "qtdEstoque": 12
     }
   ],
-  "checkout": [
-
-  ]
+  "checkout": []
 }

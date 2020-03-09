@@ -1,0 +1,23 @@
+<div class="container">
+    <form class="example-form" [formGroup]="userFormGroup" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Name</mat-label>
+                    <input required formControlName="name" matInput placeholder="Ex: John Doe" />
+                </mat-form-field>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Email</mat-label>
+                    <input required [email]="true" formControlName="email" matInput placeholder="Ex: John Doe" />
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <button mat-raised-button type="submit" [disabled]="!userFormGroup.valid">Save</button>
+            </div>
+        </div>
+    </form>
+</div>

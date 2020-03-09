@@ -1,1 +1,42 @@
-<router-outlet></router-outlet>
+<mat-toolbar color="primary">
+
+    <span>A BookStore</span>
+
+    <span class="example-fill-remaining-space"></span>
+
+    <span>
+
+        <!-- todo: Show only when is a user-->
+        <span>
+            <button mat-button (click)="redirectToPage('home')">Home</button>
+        </span>
+
+        <span>
+            <button mat-button (click)="redirectToPage('products/list')">View Store</button>
+        </span>
+
+        <!-- todo: Show only when user is admin-->
+        <span>
+            <button mat-button [matMenuTriggerFor]="adminMenu">Admin</button>
+            <mat-menu #adminMenu="matMenu">
+                <button mat-menu-item (click)="redirectToPage('products')">List Products</button>
+                <button mat-menu-item >List Orders</button>
+                <button mat-button (click)="redirectToPage('profile')">Profile</button>
+            </mat-menu>
+        </span>
+
+        <!-- todo: Enable only when is a product on the shopping cart-->
+        <span>
+            <button class="chart" mat-button>
+                <span class="chart-items">0</span>
+                <i class="material-icons">shopping_cart</i>
+            </button>
+        </span>
+
+    </span>
+</mat-toolbar>
+
+<!-- Shopping Cart -->
+<section class="main">
+    <router-outlet></router-outlet>
+</section>

@@ -1,0 +1,48 @@
+.card{
+
+    margin-bottom: 15px;
+
+    &--body{
+
+        &--item{
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            grid-template-areas: "title description";
+
+            margin-top: 10px;
+        }
+
+        &--title{
+            grid-area: title;
+            display: grid-area;
+
+            font-weight: bold;
+        }
+
+        &--description{
+            grid-area: description;
+            display: grid-area;
+
+            text-align: right;
+        }
+    }
+
+    &--flag{
+        padding: 3px 5px;
+
+        margin: 5px;
+
+        background-color: #dedede;
+        border-radius: 5px;
+        color: #a1a1a1;
+        
+    }
+}
+
+mat-card-title{
+    min-height: 60px;
+}
+
+:host ::ng-deep .mat-card-header-text{
+    margin: 0px;
+}

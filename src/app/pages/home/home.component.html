@@ -1,8 +1,14 @@
-<mat-grid-list 
-    class="book--container"
-    #grid rowHeight="2:1"
->
-    <mat-grid-tile class="book--area" *ngFor="let book of books">
-        <app-card [book]="book"></app-card>
-    </mat-grid-tile>
-</mat-grid-list>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="holder-data">
+                <img class="user" src="./../../../assets/images/no-user.jpg" alt="">
+
+                <div class="holder-information">
+                    <h1 class="text-title">{{user$?.name}}</h1>
+                    <span class="text-subtitle">{{user$?.email}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

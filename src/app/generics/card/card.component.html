@@ -1,10 +1,13 @@
 <mat-card class="card">
+    <img mat-card-image src="./../../../assets/images/no-image.png" alt="graphic">
+    
     <mat-card-header>
-        <mat-card-title>#{{book?.id}} - {{book?.name}}</mat-card-title>
+        <mat-card-title>{{book?.name}}</mat-card-title>
+        <mat-card-subtitle>#{{book?.id}}</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content class="card--body">
-        <div class="card--body--item">
-            <span *ngFor="let flag of book?.genre">
+        <div class="card--body">
+            <span class="card--flag" *ngFor="let flag of book?.genre">
                 {{flag}}
             </span>
         </div>
@@ -23,4 +26,9 @@
             <div class="card--body--description">{{book?.quantity}}</div>
         </div>
     </mat-card-content>
+
+    <mat-card-actions>
+        <button *ngIf="path" mat-raised-button color="primary" (click)="redirectToPage()">Edit</button>
+        <button *ngIf="deleteAction" mat-raised-button color="warn" (click)="openDialog()">Delete</button>
+    </mat-card-actions>
 </mat-card>

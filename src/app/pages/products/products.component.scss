@@ -1,0 +1,19 @@
+.card{
+    &--image{
+        max-height: 100px;
+    }
+}
+
+.text{
+    &--title{
+        font-size: 2rem;
+    }
+}
+
+.button{
+    &--add{
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+    }
+}
